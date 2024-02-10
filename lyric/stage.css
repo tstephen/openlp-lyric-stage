@@ -1,0 +1,12 @@
+body {
+  font-family: Helvetica, Ubuntu, Roboto, Calibro, Arial, sans-serif;
+}
+h1 {
+  font-size: 5rem;
+}
+main p {
+  font-size: 3.5rem;
+}
+footer p {
+  font-size: 0.8rem;
+}

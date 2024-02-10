@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenLP lyric stage</title>
+    <link type="text/css" rel="stylesheet" href="stage.css">
+  </head>
+  <body>
+    <div id="template-container">Loading...</div> 
+    <script id="template" type="x-tmpl-mustache">
+      <header>
+        <h1>{{title}}</h1>
+      </header>
+      <main>
+        {{#slides}}
+          <p>{{{html}}}</p>
+        {{/slides}}
+      </main>
+      <footer>
+        {{#footer}}
+          <p>{{ . }}</p>
+        {{/footer}}
+      </footer>
+    </script>
+    <script type="text/javascript" src="stage.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script> 
+    </script>
+  </body>
+</html>
+
