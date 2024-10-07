@@ -1,7 +1,28 @@
 body {
+  background-size: 100% auto;
   background-color: #333333;
   font-family: Helvetica, Ubuntu, Roboto, Calibro, Arial, sans-serif;
   text-align: center;
+}
+body #template-container {
+  height: 75%;
+  position: absolute;
+  width: 80%;
+  padding: 0 5%;
+  margin: 5%;
+}
+body:not(.blank) {
+  /* tested with url here, but unclear how to set to theme url dynamically for now */
+  background: #333333;
+}
+.blank {
+  background-color: transparent;
+  background: #000000;
+  color: transparent;
+}
+.theme {
+  background-color: transparent;
+  color: transparent;
 }
 header {
   display: none;
@@ -10,13 +31,12 @@ header h1 {
   color: white;
   font-size: 5rem;
 }
-main,
-.template-container {
+main {
   background-color: #333333;
+  color: white;
   padding: 1rem 2rem;
 }
 main p {
-  color: white;
   font-size: 3.5rem;
 }
 header, footer {
